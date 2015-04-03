@@ -52,6 +52,7 @@
      <Compile Include="Assets\TrouTrigger.cs" />
      <Compile Include="Assets\dragShield.cs" />
      <Compile Include="Assets\dragTarget.cs" />
+     <Compile Include="Assets\onLooseArea.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
