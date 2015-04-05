@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
-public class Manager : MonoBehaviour {
+public class Manager : MonoBehaviour,IPointerDownHandler {
 
 	public float snap = 0;
 	public float current = 0;
@@ -19,12 +20,9 @@ public class Manager : MonoBehaviour {
 		}
 	}
 
-	void OnGUI () {
-		Event e = Event.current;
-		if (e.control == this && e.type == EventType.mouseDown) {
-			snap = Time.realtimeSinceStartup;
-			Time.timeScale = 1-Time.timeScale;
-		}
+	public void OnPointerDown (PointerEventData eventData) {
+		snap = Time.realtimeSinceStartup;
+		Time.timeScale = 1-Time.timeScale;
 	}
 
 }
