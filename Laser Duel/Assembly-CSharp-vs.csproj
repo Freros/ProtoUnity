@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BoutonFindeTour.cs" />
+     <Compile Include="Assets\Manager.cs" />
      <Compile Include="Assets\MouseOnUnit.cs" />
      <Compile Include="Assets\OnRingClick.cs" />
      <Compile Include="Assets\TrouTrigger.cs" />

@@ -17,6 +17,7 @@ public class MouseOnUnit : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDrag
 			moveLine = (GameObject) Instantiate (dragLineProto, transform.position, transform.rotation);
 			moveLine.transform.SetParent(transform);
 		}
+//		Time.timeScale = 0;
 		moveLine.transform.position = transform.position;
 		moveLine.GetComponent<RectTransform> ().sizeDelta=new Vector2(moveLine.GetComponent<RectTransform> ().rect.width,100);
 	}
@@ -31,6 +32,7 @@ public class MouseOnUnit : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDrag
 //		Debug.Log ("MouseOnUnit.OnEndDrag");
 		target.x = eventData.position.x;
 		target.y = eventData.position.y;
+		//Time.timeScale = 1;
 
 //		this.GetComponent<Rigidbody2D> ().Sleep ();
 	}
