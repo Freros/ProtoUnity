@@ -7,6 +7,7 @@ public class Manager : MonoBehaviour,IPointerDownHandler {
 	public float snap = 0;
 	public float current = 0;
 	public float delai = 10;
+	public bool ordering = true;
 
 	// Update is called once per frame
 	void Start(){
